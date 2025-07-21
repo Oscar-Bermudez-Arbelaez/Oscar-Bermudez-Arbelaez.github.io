@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form submit tutorial using formspee</title>
+</head>
+<body>
+    <section class="contact">
+        <div class="flex-container">
+            <article class="contact-left">
+                <h2 class="section-subtitle">Reach out to us via the any means below</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7948182437735!2d.7862979999999995!3d.1582289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43a0b7e3dd5a9106!2sEdufun%20Technik%20STEM%20Hub!5e0!3m2!1sen!2sng!4v1667658289221!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            <article class="contact-right">
+                <p>Please enter your details and message below to send your enquiries or feedback to Future builders school. We will always reply your messages swiftly.</p>
+                <form action="https://formspree.io/f/xzzvdnvz" method="POST">
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <textarea rows="6" name="Message" placeholder="Enter Your Phone Number or Email" required></textarea>
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+                <p>You can also contact us via our phone number, whatsapp, email or social media handles below</p>
+                <p class="fa-paper-plane"><a href="mailto:baracaldo2@yahoo.com">baracaldo2@yahoo.com</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/oscar.bermudezarbelaez/" target="_blank" class="fab fa-facebook"></a>
+                    <a href="https://x.com/airesminisplit" target="_blank" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/oscar.bermudezarbelaez/" target="_blank" class="fab fa-instagram"></a>
+                </div>
+                <!-- Add this in your <head> section to load Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            </article>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .contact {
+        padding: 20px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-left, .contact-right {
+        width: 48%;
+    }
+    .section-subtitle {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    input, textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 1em;
+    }
+    .btn-submit {
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .btn-submit:hover {
+        background-color: #0056b3;
+    }
+    .social-icons a {
+        margin-right: 10px;
+        text-decoration: none;
+    }
