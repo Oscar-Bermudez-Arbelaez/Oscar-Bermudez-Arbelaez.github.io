@@ -1,0 +1,99 @@
+/* formspree.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body background and centering */
+body {
+    background: #f7f7fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form container */
+.formspree-form {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Form title */
+.formspree-form h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Form fields */
+.formspree-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.formspree-form input,
+.formspree-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #fafbfc;
+    transition: border-color 0.2s;
+}
+
+.formspree-form input:focus,
+.formspree-form textarea:focus {
+    border-color: #6366f1;
+    outline: none;
+}
+
+/* Submit button */
+.formspree-form button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.formspree-form button[type="submit"]:hover {
+    background: #4f46e5;
+}
+
+/* Success and error messages */
+.formspree-form .success-message {
+    color: #16a34a;
+    background: #dcfce7;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.formspree-form .error-message {
+    color: #b91c1c;
+    background: #fee2e2;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
